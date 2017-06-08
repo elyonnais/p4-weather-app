@@ -1,4 +1,16 @@
 /* Styling */
 body {
-    background: red;
+    background: rgb(240, 223, 175);
+}
+
+.weather {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ul {
+  background: teal;
+  padding: 3em;
+  
 }
