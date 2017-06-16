@@ -13,7 +13,7 @@ $('.toggle-drawer').click( function() {
 $('#city-1').on('click', function() {
   
   $.simpleWeather({
-    location: 99004,
+    location: Seattle,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
@@ -23,6 +23,10 @@ $('#city-1').on('click', function() {
       $('#one .temp').text(weather.temp);
       $('#one .city').text(weather.city);
       
+        
+        // Change Change w/ Condition code
+      var iconCode = 'icon-' + weather.code;
+      $('i').attr('class', iconCode );
     },
     error: function(error) {
       // Show if weather cannot be retreived
@@ -38,7 +42,7 @@ $('#city-1').on('click', function() {
 $('#city-2').on('click', function() {
   
   $.simpleWeather({
-    location: 98105,
+    location: Salamanca,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
@@ -47,6 +51,10 @@ $('#city-2').on('click', function() {
       // Display Data
       $('#two .temp').text(weather.temp);
       $('#two .city').text(weather.city);
+        
+        // Change Change w/ Condition code
+      var iconCode = 'icon-' + weather.code;
+      $('i').attr('class', iconCode );
       
     },
     error: function(error) {
@@ -89,6 +97,10 @@ $('#city-3').on('click', function() {
       // Display Data
       $('#three .temp').text(weather.temp);
       $('#three .city').text(weather.city);
+        
+        // Change Change w/ Condition code
+      var iconCode = 'icon-' + weather.code;
+      $('i').attr('class', iconCode );
         
 
     },
