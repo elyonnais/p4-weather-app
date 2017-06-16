@@ -1,8 +1,14 @@
 @import "normalize";
 
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
 /* Styling */
 body {
-    background: rgb(240, 223, 175);
+    background: #FFC7A8;
+    font-family: 'Poppins', sans-serif;
 }
 
 .weather {
@@ -44,15 +50,15 @@ section {
 }
 // Section 1
 #one {
-  background: red;
+  background: #c9596b;
 }
 // Section 2
 #two {
-  background: green;
+  background: rgba(36, 55, 69, 0.28);
 }
 // Section 3
 #three {
-  background: blue;
+  background: rgba(201, 89, 107, 0.23);
 }
 // :target Selection from Sidebar
 :target {
