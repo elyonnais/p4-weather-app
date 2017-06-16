@@ -9,6 +9,8 @@
 body {
     background: #ffc7a8;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
 }
 
 .weather {
@@ -18,14 +20,25 @@ body {
 }
 
 ul {
-  background: teal;
+  background: rgb(36, 55, 69);
   padding: 3em;
+  text-align: justify;
   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffc7a8;
 }
 
 // Drawer
 aside {
-  background: #ccc;
+  background: rgb(36, 55, 69);
   position: fixed;
   height: 100%;
   min-height: 100%;
@@ -42,6 +55,11 @@ aside {
   left: 0;
 }
 
+a.toggle-drawer {
+    text-decoration: none;
+}
+
+
 // All Sections
 section {
   position: absolute;
@@ -50,16 +68,18 @@ section {
 }
 // Section 1
 #one {
-  background: #c9596b;
+  background: rgb(160, 185, 176);
 }
 // Section 2
 #two {
-  background: rgba(36, 55, 69, 0.28);
+  background: rgb(160, 185, 176);
 }
 // Section 3
 #three {
-  background: rgba(201, 89, 107, 0.23);
+  background: rgb(160, 185, 176);
+
 }
+
 // :target Selection from Sidebar
 :target {
   z-index: 1;
