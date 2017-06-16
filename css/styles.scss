@@ -22,8 +22,11 @@
 body {
     background: #ffc7a8;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
     color: white;
+}
+
+h1 {
+    font-size: 12px;
 }
 
 .weather {
@@ -67,6 +70,7 @@ aside {
 // Show Drawer
 .drawer {
   left: 0;
+  font-size: 14px;
 }
 
 a.toggle-drawer {
@@ -84,17 +88,20 @@ section {
 #one {
   background: rgb(160, 185, 176);
     font-size: 2em;
+    padding: 2em;
 }
 // Section 2
 #two {
   background: rgb(160, 185, 176);
     font-size: 2em;
+    padding: 2em;
 }
 // Section 3
 #three {
   background: rgb(160, 185, 176);
     font-size: 2em;
-
+    padding: 2em;
+    text-align: center;
 }
 
 // :target Selection from Sidebar
@@ -162,5 +169,38 @@ i {
 .icon-45:before { content: "S"; }
 .icon-46:before { content: "U"; }
 .icon-47:before { content: "S"; }
+
+// Media Queries
+
+// Mobile
+@media only screen
+  (min-width: 20em) 
+  and (max-width: 47.9375em)  { 
+
+      
+}
+
+
+// Tablet
+@media only screen and (min-width: 48em)
+ and (max-width: 63.9375em){
+     
+     h1 {
+         font-size: 1em;
+     }
+    
+   
+    
+}
+
+// Desktop 
+@media only screen and (min-width: 64em) {
+    
+    h1 {
+        font-size: 2em;
+    }
+
+}
+
 
 
