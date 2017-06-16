@@ -1,4 +1,4 @@
-@import "normalize";
+@import "_normalize";
 
 
 @font-face {
@@ -56,11 +56,12 @@ aside {
   height: 100%;
   min-height: 100%;
   left: -200px;
-  width: 200px;
+  width: 200px; 
   // always on top
   z-index: 999999;
   // animate
   transition: left .25s;
+  
 }
 
 // Show Drawer
@@ -82,14 +83,17 @@ section {
 // Section 1
 #one {
   background: rgb(160, 185, 176);
+    font-size: 2em;
 }
 // Section 2
 #two {
   background: rgb(160, 185, 176);
+    font-size: 2em;
 }
 // Section 3
 #three {
   background: rgb(160, 185, 176);
+    font-size: 2em;
 
 }
 
